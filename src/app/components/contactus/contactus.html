@@ -1,0 +1,45 @@
+<div class="bg-dark text-light">
+    <div class="row">
+        <div class="col-12 d-flex-nowrap d-flex justify-content-md-around">
+
+            <div class="col-12 col-md-6 w-md-100">
+                <form [formGroup]="formulaire" class="w-md-100">
+                    <p>Ask us anythings</p>
+                    <imput class="d-inline form-control w-md-50" id="name" formControlName="name" placeholder="Your name..." />
+                    @if (formulaire.get('name')?.hasError('required') && formulaire.get('name')?.touched) {
+                    <div class="text-danger small mt-1">Le nom est requis</div>
+                    }
+
+                    <imput class="d-inline form-control w-md-50" id="email" formControlName="email" placeholder="Your @e-mail..." />
+                    @if (formulaire.get('email')?.hasError('required') && formulaire.get('email')?.touched) {
+                    <div class="text-danger small mt-1">Le email est requis</div>
+                    }
+
+                    <textarea class="d-block form-control w-md-0" rows="3" cols="9" formControlName="message">Your message...</textarea>
+                    @if (formulaire.get('message')?.hasError('required') && formulaire.get('message')?.touched) {
+                    <div class="text-danger small mt-1">Le message est requis</div>
+                    }
+                    @if (formulaire.get('message')?.hasError('minlength') && formulaire.get('message')?.touched) {
+                    <div class="text-danger small mt-1">Le message doit contenir au moins 3 caractères</div>
+                    }
+                    <button class="btn btn-orange text-uppercase" type="submit"> Send</button>
+                </form>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <p>Our contact info</p>
+                <ul class="list-unstyled">
+                    <li>lorem ipsum@gmail.com</li>
+                    <li><a href="tel:0044882201">00 44 88 22 01</a></li>
+                    <li>12 lorem ipsum street</li>
+                    <li><br /></li>
+                    <li>We are open 10h - 21H</li>
+                    <li>Monday - Saturday</li>
+                    <li>And 16 - 20</li>
+                    <li>On sundays</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+// @import 'src/styles.scss';
+@use 'src/styles';
+// @import 'src/_variables';
+// @import 'src/styles.scss';
+
+$bg-color: #0a0a0a;
+$sec-bg-color: #0f0f0f;
+$orange-btn: #ff6d1f;
+$yellow-btn: #fabb26;
+$green-btn: #2aa321;
+$light-gray-bg: #242424;
+$main-text: #ffffff;
+$yellow-text: #fabb26;
+$black-text: #000000;
+//POLICE D'ECRITURE
+//PAS BESOIN OU USE MIXXINS
+
+
+// body {
+//     background-color: _variables.$bg-color;
+//     background-color: red;
+// }
+// .container {
+//     background-color: green;
+// }
+// img {
+//     max-width: 100% !important;
+//     text-align: center !important;
+// }
+// @media screen and (min-width:578px) {
+
+// }
