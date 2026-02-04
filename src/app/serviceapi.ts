@@ -8,14 +8,14 @@ export class Serviceapi {
   constructor(private http: HttpClient) {}
 
   fetchData() {
-    return this.http.get('http://localhost:8081/index.php', {
+    return this.http.get('http://localhost:8080/index.php', {
       headers: {'Authorization' : 'VBnAzKpOLlf5DZSNpNuXJmvg4' },
       responseType: 'text'
     });
   }
 
   getJsonData(formData: FormData) {
-    return this.http.post('http://localhost:8081/index.php', {
+    return this.http.post('http://localhost:8080/index.php', {
       headers: {'Authorization' : 'VBnAzKpOLlf5DZSNpNuXJmvg4' },
       responseType: 'text'
     });

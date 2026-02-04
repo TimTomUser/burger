@@ -1,9 +1,52 @@
-// @use 'src/styles.scss';
-// @import 'src/styles.scss';
-// @import 'src/_variables';
+body {
+    // background-color: var.$bg-color;
+    background-color: #0a0a0a;
+}
 
+button, #cta {
+    background-color:#fabb26 !important;
+}
 
+img {
+    max-width: 100% !important;
+    text-align: center !important;
+}
 
-// @use "src/_variables";
-// @import 'src/styles';
+h4 {
+    color: #fabb26 !important;
+}
 
+header {
+    background-color: #1f1f1f;
+}
+
+p {
+    font-size: 85%;
+}
+
+div#footer {
+    background-color: #ff6d1f !important;
+}
+
+// btn {
+//     color: #000000;
+// }
+// btn.header {
+//     background-color: #2aa321;
+// }
+p {
+    color: #fff;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: rgb(191, 199, 207);
+}
+
+textarea#area,
+input#name,
+input#eamil {
+    background-color: #242424;
+}
+
+@media screen and (min-width:576px) {}

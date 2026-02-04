@@ -7,5 +7,5 @@ import { Component, Input, signal } from '@angular/core';
   styleUrl: './header.scss',
 })
 export class Header {
-@Input() contentHeader: any = [];
+@Input() monHeader: any = [];
 }

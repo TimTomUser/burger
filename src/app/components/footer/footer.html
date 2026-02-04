@@ -1,8 +1,13 @@
-<!-- Formulaire de contact -->
-<!-- <div class="container bg-info"> -->
-<div class="row bg-info">
+<!-- <div id="footer" class="container"> -->
+<div id="footer" class="row">
 
-    <div class="col-12 d-flex-nowrap d-md-flex justify-content-md-center">
+    <div class="col-12 d-flex-nowrap d-md-flex justify-content-md-center mt-4">
+
+        <div class="col-12 col-md-2 me-5">
+
+
+
+        </div>
 
         <div class="col-12 col-md-1 me-5">
 
@@ -11,80 +16,90 @@
         </div>
 
         <div class="col-12 col-md-3 me-5">
-            <h4 class="text-uppercase">Tweets widget</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos perspiciatis deserunt quibusdam id in
-                sunt, error laboriosam voluptas cumque sequi dolorem adipisci ut, voluptatum distinctio nulla
+            <h4 class="text-uppercase text-white">Tweets widget</h4>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos perspiciatis
+                deserunt consectetur adipisicing elit. Eos perspiciatis
+                quibusdam id in sunt, error laboriosam voluptas cumque sequi dolorem adipisci ut, voluptatum distinctio
+                nulla
 
             </p>
-            <button class="btn btn-warning text-uppercase"> get a quote</button>
+            <button class="btn text-uppercase"> get a quote</button>
         </div>
 
-        <div class="col-12 col-md-2 ms-5">
+        <div class="col-12 col-md-2 ms-2">
 
-            <h4 class="text-uppercase">Usefull links</h4>
+            <h4 class="text-uppercase text-white">Usefull links</h4>
 
             <ul class=" col-12 mb-0 d-flex-nowrap list-unstyled">
                 <div>
-                    <li>&#10704; <a href="/">Home page</a></li>
+                    <li class="text-white">&#10704; <a class="text-white" href="/">Home page</a></li>
                 </div>
                 <div>
-                    <li>&#10704; <a href="#about">About</a></li>
+                    <li class="text-white">&#10704; <a class="text-white" href="#about">About</a></li>
                 </div>
                 <div>
-                    <li>&#10704; <a href="#hotdeals">Hot Deals</a></li>
+                    <li class="text-white">&#10704; <a class="text-white" href="#hotdeals">Hot Deals</a></li>
                 </div>
                 <div>
-                    <li>&#10704; <a href="#ourmenu">Our Menu</a></li>
+                    <li class="text-white">&#10704; <a class="text-white" href="#ourmenu">Our Menu</a></li>
                 </div>
                 <div>
-                    <li>&#10704; <a href="#erviews"> Reviews</a></li>
+                    <li class="text-white">&#10704; <a class="text-white" href="#erviews"> Reviews</a></li>
                 </div>
                 <div>
-                    <li>&#10704; <a href="#contactus"> Contact Form</a></li>
+                    <li class="text-white">&#10704; <a class="text-white" href="#contactus"> Contact Form</a></li>
                 </div>
 
             </ul>
         </div>
 
-        <div class="col-12 col-md-3 ms-5">
-            <h4 class="text-uppercase">Our newseletter</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eveniet voluptatibus culpa ipsum
+        <div class="col-12 col-md-4 ">
+            <h4 class="text-uppercase text-white">Our newseletter</h4>
+            <p class="text-white col-md-4 col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+                culpa ipsum
             </p>
-            <form id="monFormulaire" [formGroup]="formfooter">
-                <div class="row mb-3">
-                    <div class="w-100">
+            <form id="monFormulaire" [formGroup]="formfooter" class="w-75">
+                <div class="row mb-4 ">
+                    <div class="w-md-75">
                         <!-- <label for="email" class="form-label">email</label> -->
-                        <input type="text" id="nom" class="form-control d-inline w-75" formControlName="email"
-                            [class.is-invalid]="formfooter.get('email')?.invalid && formfooter.get('email')?.touched"
-                            placeholder="Votre email" required /><button class="btn btn-warning d-inline"> SEND
+                        <input type="text" id="nom" class="form-control d-inline w-50" formControlName="mailing"
+                            [class.is-invalid]="formfooter.get('mailing')?.invalid && formfooter.get('mailing')?.touched"
+                            placeholder="Votre mailing"  required /><button class="mb-1 btn w-md-25 d-inline"> SEND
                         </button>
-                        @if (formfooter.get('email')?.hasError('required') && formfooter.get('email')?.touched) {
-                        <div class="text-danger small mt-1">Le email est requis</div>
+                        @if (formfooter.get('mailing')?.hasError('required') && formfooter.get('mailing')?.touched) {
+                        <div class="text-danger small mt-1">Le mail est requis pour recevoir les newsletters</div>
                         }
-                        @if (formfooter.get('email')?.hasError('minlength') && formfooter.get('email')?.touched) {
-                        <div class="text-danger small mt-1">Le email doit contenir au moins 3 caractères</div>
+                        @if (formfooter.get('mailing')?.hasError('minlength') && formfooter.get('mailing')?.touched) {
+                        <div class="text-danger small mt-1">Le mail doit contenir au moins 3 caractères</div>
                         }
                     </div>
                 </div>
             </form>
-            <span>lorem lorem lorem lorem.</span>
+            <span class="text-white">lorem lorem lorem lorem.</span>
         </div>
     </div>
-    <div class="fs-1 col-10 text-center">___________________________________________________</div>
-</div>
-<!-- </div> -->
-<!-- <div class="container bg-info"> -->
-<div class="row bg-info">
+    <div class="container">
+        <div class="row">
 
-    <div class="col-12 d-flex-nowrap d-md-flex justify-content-md-center">
+            <div class="col-12 w-md-100">
+                <pre class=" text-white col-12">
+                              ___________________________________________________________________________________________________________________________________
+                </pre>
+            </div>
+        </div>
+    </div>
+    <div class="row">
 
-        <div class="col-12 col-md-1"><img src="/fb-icon.png"></div>
-        <div class="col-12 col-md-1"><img src="/x-icon.png"></div>
-        <div class="col-12 col-md-1"><img src="/instagram-icon.png"></div>
-        <div class="col-12 col-md-1"><img src="/yt-icon.png"></div>
+        <div class="col-12 d-flex-nowrap d-md-flex justify-content-md-center mt-2">
+
+            <div class="col-12 col-md-1"><img src="/fb-icon.png"></div>
+            <div class="col-12 col-md-1"><img src="/x-icon.png"></div>
+            <div class="col-12 col-md-1"><img src="/instagram-icon.png"></div>
+            <div class="col-12 col-md-1"><img src="/yt-icon.png"></div>
 
 
+        </div>
+        <span class="text-center text-white">Copyright© www.sandisherie.net</span>
     </div>
     <!-- </div> -->
 </div>
-<!-- </div> -->
